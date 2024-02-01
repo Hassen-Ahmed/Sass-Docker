@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-theme-light);
+  background-color: white;
   width: 100vw;
   height: 100vh;
   font-family: "Courier New", Courier, monospace;
@@ -37,15 +37,15 @@ body {
 }
 
 .strategy {
-  background-color: var(--color-strategy);
+  background-color: rgb(113, 174, 231);
 }
 
 .analysis {
-  background-color: var(--color-analysis);
+  background-color: rgb(230, 158, 23);
 }
 
 .implementation {
-  background-color: var(--color-implementation);
+  background-color: rgb(127, 183, 42);
 }
 
 .features {
@@ -55,7 +55,7 @@ body {
   align-items: center;
   gap: 2rem;
   width: 66.6666666667vw;
-  background-color: var(--color-theme-dark);
+  background-color: rgb(53, 53, 53);
   padding: 4rem 8rem;
   border-radius: 1rem;
 }
@@ -74,9 +74,9 @@ body {
   top: 0;
   right: 4rem;
   width: 8rem;
-  color: var(color-theme-light);
-  background-color: var(--color-theme-dark);
-  border: 0.1rem solid var(--color-font-grey);
+  color: white;
+  background-color: rgb(53, 53, 53);
+  border: 0.1rem solid rgb(87, 87, 87);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease;

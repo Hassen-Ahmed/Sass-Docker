@@ -3,7 +3,6 @@
 .feature {
   padding: 2rem;
   border-radius: var.$border-radius-small;
-  // transition: ;
 
   &__heading {
     font-size: 2rem;
@@ -20,13 +19,13 @@
 }
 
 .strategy {
-  background-color: var(--color-strategy);
+  background-color: var.$color-strategy;
 }
 
 .analysis {
-  background-color: var(--color-analysis);
+  background-color: var.$color-analysis;
 }
 
 .implementation {
-  background-color: var(--color-implementation);
+  background-color: var.$color-implementation;
 }

@@ -1,9 +1,9 @@
-@use '../abstracts/mixins' as mxn;
-@use '../abstracts/variable' as var;
+@use "../abstracts/mixins" as mxn;
+@use "../abstracts/variable" as var;
 
-.footer{
-    margin-top: var.$margin-vertical-medium;
-    &__para {
-        font-size: var.$fonts-heading-03;
-    }
+.footer {
+  margin-top: var.$margin-vertical-medium;
+  &__para {
+    font-size: var.$fonts-heading-03;
+  }
 }
