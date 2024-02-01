@@ -59,6 +59,11 @@ body {
   padding: 4rem 8rem;
   border-radius: 1rem;
 }
+@media screen and (max-width: 900px) {
+  .features {
+    flex-wrap: wrap;
+  }
+}
 
 .header {
   display: flex;
