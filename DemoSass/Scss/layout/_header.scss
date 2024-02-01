@@ -1,0 +1,37 @@
+@use "../abstracts/variable" as var;
+@use "../abstracts/mixins" as mxn;
+
+.header {
+  @include mxn.flex-column();
+  width: var.$width-full-percent / 1.5;
+  padding: 2rem 4rem;
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 4rem;
+    width: 8rem;
+    color: var(color-theme-light);
+    background-color: var(--color-theme-dark);
+    border: 0.1rem solid var(--color-font-grey);
+    border-radius: var.$border-radius-small;
+    padding: var.$padding-horizontal-tiny/2 var.$padding-horizontal-tiny;
+    @include mxn.transitions(all, 0.2s);
+    cursor: pointer;
+
+    &:active {
+      transform: translateY(0.3rem);
+      @include mxn.transitions(all, 0.2s);
+      @include mxn.transitions(all, 0.2s);
+    }
+  }
+
+  &__heading {
+    font-size: var.$fonts-heading-01;
+  }
+
+  &__para {
+    font-size: var.$fonts-heading-02;
+  }
+}

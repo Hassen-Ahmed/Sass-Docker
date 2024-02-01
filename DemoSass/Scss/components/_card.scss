@@ -1,0 +1,32 @@
+@use "../abstracts/variable" as var;
+
+.feature {
+  padding: 2rem;
+  border-radius: var.$border-radius-small;
+  // transition: ;
+
+  &__heading {
+    font-size: 2rem;
+  }
+
+  &__para {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+  }
+}
+
+.strategy {
+  background-color: var(--color-strategy);
+}
+
+.analysis {
+  background-color: var(--color-analysis);
+}
+
+.implementation {
+  background-color: var(--color-implementation);
+}
