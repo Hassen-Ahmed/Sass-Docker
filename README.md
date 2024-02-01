@@ -1,4 +1,4 @@
-# This Repo is all about Sass/Scss 
+# This repo is all about Sass/Scss 
 
 ### What is Sass/Scss?
 
