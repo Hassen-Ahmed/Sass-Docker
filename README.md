@@ -1,8 +1,8 @@
 # This Repo is all about Sass/Scss 
 
-## What is Sass/Scss
+## What is Sass/Scss?
 
-## How to install
+## How to install and etc?
 
 ### To read .jex file:
 
