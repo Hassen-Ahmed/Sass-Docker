@@ -1,4 +1,4 @@
-## Sass and Docker
+## 🎯️ Sass and Docker
 
 ### How to install Sass or Scss:
 
@@ -10,18 +10,28 @@
 
 - After installing Node.js run this comman:
 
-  ##### `npm install -g sass` or
+  ```
+  npm install -g sass     or
+  ```
 
-  ##### `npm install -D sass` -- for local
+  ```
+  npm install -D sass     // for local DevDep
+  ```
 
 - For Linux Ubuntu users:
-  ##### `sudo npm install -g sass`
+  ```
+  sudo npm install -g sass
+  ```
 
 ### Installing Live - server
 
-##### `npm install -g live-server`
+```
+npm install -g live-server
+```
 
-##### `npm install -D live-server` for local
+```
+npm install -D live-server    // for local
+```
 
 ### Config Sass and live-server in package.json
 
@@ -54,10 +64,10 @@ docker init
 #### After a few questions it will generate this four files:
 
 ```
-    - .dockerignore
-    - Dockerfile
-    - compose.yaml
-    - README.Docker.md
+- .dockerignore
+- Dockerfile
+- compose.yaml
+- README.Docker.md
 ```
 
 ### When you're ready, start your application by running:
