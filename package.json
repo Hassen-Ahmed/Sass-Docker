@@ -6,7 +6,7 @@
   "scripts": {
     "sassComp": "sass --watch Scss/main.scss:Style/style.css",
     "server": "live-server",
-    "start": "npm run server && npm run sassComp  "
+    "start": "npm run server & npm run sassComp "
   },
   "keywords": [],
   "author": "",
