@@ -4,9 +4,15 @@
   "description": "<div style=\"display:flex\"> <img  style=\"flex:1; padding-right:10px\" width=\"400\" height=\"300\" src=\".\\media\\dark_theme.png\">",
   "main": "theme-switcher.js",
   "scripts": {
-    "sassComp":"sass --watch Scss/main.scss:Style/style.css"
+    "sassComp": "sass --watch Scss/main.scss:Style/style.css",
+    "server": "live-server",
+    "start": "npm run server && npm run sassComp  "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.70.0"
+  }
 }
