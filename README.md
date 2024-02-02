@@ -2,6 +2,12 @@
 
 ### How to install Sass or Scss:
 
+- Before installing any thing please run
+
+  ```
+  npm install
+  ```
+
 - After installing Node.js run this comman:
 
   ##### `npm install -g sass` or
