@@ -24,6 +24,7 @@ body {
 .feature {
   padding: 2rem;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .feature__heading {
   font-size: 2rem;
