@@ -1,12 +1,23 @@
 ## 🎯️ Sass and Docker
 
-### How to install Sass or Scss:
-
-- Before installing any thing please run
+- To check already configured app run:
 
   ```
   npm install
   ```
+
+- After installation done run this to all the magic:
+
+  ```
+  npm start  or  npm run start
+  ```
+
+- Or Run Docker container by this command:
+  ```
+  docker compose up --build
+  ```
+
+### How to install Sass or Scss:
 
 - After installing Node.js run this comman:
 
