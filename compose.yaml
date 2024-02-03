@@ -8,15 +8,15 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 
-version: "3"
+# version: "3"
 services:
   server:
     # use below to build image and container
-    # build:
-    #   context: .
-    #
+    build:
+      context: .
+
     # use below to use already build image and create new container
-    image: sass-image:latest
+    # image: sass-image:latest
     environment:
       NODE_ENV: production
     ports:

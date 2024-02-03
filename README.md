@@ -1,15 +1,15 @@
 ## 🎯️ Sass and Docker
 
-- To check already configured app run:
+- Run this command from you terminal to generalte node_module dir:
 
   ```
   npm install
   ```
 
-- After installation done run this to all the magic:
+- After installation done run this to see the magic:
 
   ```
-  npm start  or  npm run start
+  npm start     or      npm run start
   ```
 
 - Or Run Docker container by this command:
@@ -81,27 +81,38 @@ docker init
 - README.Docker.md
 ```
 
+### Or if you want to creat Image or Container:
+
+```
+docker build -t sass-image -f Dockerfile .
+```
+
+### Then create and run you conatainer with this command:
+
+```
+docker run --name sass-container -p 8080:8080 sass-image
+```
+
+- The first port 8080 is for container and the other one is for host port.
+- -p stand for port.
+
 ### When you're ready, start your application by running:
 
 ```
 docker compose up --build
 ```
 
-### Or if you want to creat Image or Container:
+- When you run this command it create it's own image. So, if you want to use already created image:
 
 ```
-docker build -t sass-image .   // or
-docker build -t sass-image -f Dockerfile .
-// for image
+// Add to compose.yaml
+image: sass-image:latest
 ```
 
 ```
-docker create --name sass-container sass-image
-// for container
-```
+// Remove from compose.yaml
 
-### Then you can run your container using this command:
+    build:
+      context: .
 
-```
-docker run --name sass-container -p 8080:8080 sass-image
 ```
