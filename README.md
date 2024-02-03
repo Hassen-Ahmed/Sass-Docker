@@ -103,5 +103,5 @@ docker create --name sass-container sass-image
 ### Then you can run your container using this command:
 
 ```
-docker run --name sass-container -p 8080:80 sass-image
+docker run --name sass-container -p 8080:8080 sass-image
 ```
