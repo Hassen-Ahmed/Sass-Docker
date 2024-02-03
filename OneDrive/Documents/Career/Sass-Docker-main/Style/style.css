@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.feature {
+  padding: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.feature__heading {
+  font-size: 2rem;
+}
+.feature__para {
+  font-size: 1.5rem;
+}
+.feature:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.strategy {
+  background-color: rgb(113, 174, 231);
+}
+
+.analysis {
+  background-color: rgb(230, 158, 23);
+}
+
+.implementation {
+  background-color: rgb(127, 183, 42);
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 66.6666666667vw;
+  background-color: rgb(53, 53, 53);
+  padding: 4rem 8rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .features {
+    flex-wrap: wrap;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 66.6666666667vw;
+  padding: 2rem 4rem;
+  position: relative;
+}
+.header__btn {
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  width: 8rem;
+  color: white;
+  background-color: rgb(53, 53, 53);
+  border: 0.1rem solid rgb(87, 87, 87);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.header__btn:active {
+  transform: translateY(0.3rem);
+  transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.header__heading {
+  font-size: 4rem;
+}
+.header__para {
+  font-size: 2rem;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+.footer__para {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

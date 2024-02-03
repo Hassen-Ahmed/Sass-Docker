@@ -1,0 +1,10 @@
+@use "../abstracts/variable" as var;
+@use "../abstracts/mixins" as mxn;
+
+.features {
+  @include mxn.flex-row(2rem);
+  width: calc(var.$width-full-percent / 1.5);
+  background-color: var.$color-theme-dark;
+  padding: 4rem 8rem;
+  border-radius: var.$border-radius-tiny;
+}
