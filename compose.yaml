@@ -7,6 +7,7 @@
 # You can add other services your application may depend on here, such as a
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
+
 services:
   server:
     build:
@@ -15,8 +16,16 @@ services:
       NODE_ENV: production
     ports:
       - 8080:8080
-    volumes:
-      - .:/app
+
+    # volumes:
+    #   - .:/app
+# version: "3"
+# services:
+#   joblin-server-1:
+#     build: .
+#     ports:
+#       - "8080:8080"
+
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
 # start the database before your application. The `db-data` volume persists the
