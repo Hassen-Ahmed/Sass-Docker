@@ -30,4 +30,5 @@ EXPOSE 8080
 
 # Start the SASS compiler and live-server
 # CMD npm start
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+ENTRYPOINT ["npm", "start"]
