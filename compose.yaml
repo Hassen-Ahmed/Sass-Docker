@@ -8,24 +8,20 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 
+version: "3"
 services:
   server:
-    build:
-      context: .
+    # use below to build image and container
+    # build:
+    #   context: .
+    #
+    # use below to use already build image and create new container
+    image: sass-image:latest
     environment:
       NODE_ENV: production
     ports:
       - 8080:8080
-
-    # volumes:
-    #   - .:/app
-# version: "3"
-# services:
-#   joblin-server-1:
-#     build: .
-#     ports:
-#       - "8080:8080"
-
+      #
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
 # start the database before your application. The `db-data` volume persists the
