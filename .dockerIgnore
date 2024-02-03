@@ -1,9 +1,9 @@
 
 # Node.js
-node_modules
+# node_modules
 
 # Sass
-*.css.map
+# *.css.map
 
 # Live-server
-.sass-cache
+# .sass-cache
