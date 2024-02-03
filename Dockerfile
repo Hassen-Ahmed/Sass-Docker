@@ -17,9 +17,10 @@ COPY . .
 
 # Install app dependencies
 # Install sass and live-server globally
+RUN npm install
+
 RUN npm install -g sass live-server
 
-RUN npm install
 
 # Run security scan
 RUN npm audit --production
@@ -28,4 +29,5 @@ RUN npm audit --production
 EXPOSE 8080
 
 # Start the SASS compiler and live-server
-CMD npm start
+# CMD npm start
+CMD ["npm", "start"]
