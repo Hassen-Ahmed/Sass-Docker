@@ -90,7 +90,8 @@ docker compose up --build
 ### Or if you want to creat Image or Container:
 
 ```
-docker build -t sass-image .
+docker build -t sass-image .   // or
+docker build -t sass-image -f Dockerfile .
 // for image
 ```
 
