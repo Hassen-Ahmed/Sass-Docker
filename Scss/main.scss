@@ -1,5 +1,11 @@
-@use "./base/base" as *;
-@use "./components/card" as *;
-@use "./pages/features.scss" as *;
-@use "./layout/header" as *;
-@use "./layout/footer" as *;
+@use "./base/base";
+
+@use "./components/card";
+
+@use "./pages/features.scss";
+
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./theme/themeLight";
+@use "./theme/themeDark";
