@@ -21,9 +21,54 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+.theme-light {
+  background-color: #fff;
+  color: #333;
+  transition: all 0.5s ease;
+}
+.theme-light .theme__btn {
+  background-color: black;
+  color: silver;
+}
+.theme-light .features {
+  background-color: #333;
+  color: #fff;
+}
+.theme-light .contact {
+  background-color: #333;
+  color: #fff;
+}
+.theme-light .footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-dark {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.theme-dark .theme__btn {
+  background-color: silver;
+  color: black;
+}
+.theme-dark .features {
+  background-color: #fff;
+  color: #333;
+}
+.theme-dark .contact {
+  background-color: #fff;
+  color: #333;
+}
+.theme-dark .footer {
+  background-color: #fff;
+  color: #333;
+}
+
 .feature {
   padding: 2rem;
   border-radius: 2rem;
+  color: black;
   cursor: pointer;
 }
 .feature__heading {
@@ -38,15 +83,15 @@ body {
 }
 
 .strategy {
-  background-color: rgb(113, 174, 231);
+  background-color: #71aee7;
 }
 
 .analysis {
-  background-color: rgb(230, 158, 23);
+  background-color: #e69e17;
 }
 
 .implementation {
-  background-color: rgb(127, 183, 42);
+  background-color: #7fb72a;
 }
 
 .features {
@@ -56,7 +101,6 @@ body {
   align-items: center;
   gap: 2rem;
   width: 66.6666666667vw;
-  background-color: rgb(53, 53, 53);
   padding: 4rem 8rem;
   border-radius: 1rem;
 }
@@ -75,23 +119,19 @@ body {
   padding: 2rem 4rem;
   position: relative;
 }
-.header__btn {
+.header .theme__btn {
   position: absolute;
   top: 0;
   right: 4rem;
   width: 8rem;
-  color: white;
-  background-color: rgb(53, 53, 53);
   border: 0.1rem solid rgb(87, 87, 87);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.header__btn:active {
+.header .theme__btn:active {
   transform: translateY(0.3rem);
-  transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 .header__heading {
   font-size: 4rem;
@@ -102,6 +142,7 @@ body {
 
 .footer {
   margin-top: 2rem;
+  padding: 4rem;
 }
 .footer__para {
   font-size: 1.4rem;
