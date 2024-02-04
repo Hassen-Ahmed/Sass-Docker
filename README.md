@@ -15,6 +15,7 @@
 - Or Run Docker container by this command:
   ```
   docker compose up --build
+  // if this doesn't work check below Docker section and you can run then.
   ```
 
 ### How to install Sass or Scss:
