@@ -15,7 +15,6 @@ html {
 
 body {
   @include mxn.flex-column();
-  background-color: var.$color-theme-light;
   width: var.$width-full-percent;
   height: var.$height-full;
   font-family: "Courier New", Courier, monospace;

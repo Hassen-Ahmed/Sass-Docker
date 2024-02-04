@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../abstracts/variable" as var;
 @use "../abstracts/mixins" as mxn;
 
@@ -12,9 +13,10 @@
     top: 0;
     right: 4rem;
     width: 8rem;
-    border: 0.1rem solid var.$color-font-grey;
-    border-radius: var.$border-radius-small;
-    padding: calc(var.$padding-horizontal-tiny/2) var.$padding-horizontal-tiny;
+    border: 0.1rem solid map.get(var.$color-font, "grey");
+    border-radius: map.get(var.$border-radius, "small");
+    padding: calc(map.get(var.$padding-horizontal, "tiny") / 2)
+      map.get(var.$padding-horizontal, "tiny");
     transition: all 0.2s ease;
     cursor: pointer;
 
@@ -24,10 +26,10 @@
   }
 
   &__heading {
-    font-size: var.$fonts-heading-01;
+    font-size: map.get(var.$fonts-heading, "01");
   }
 
   &__para {
-    font-size: var.$fonts-heading-02;
+    font-size: map.get(var.$fonts-heading, "02");
   }
 }

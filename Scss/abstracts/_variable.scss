@@ -1,37 +1,44 @@
 // colors
-$color-font-base: white;
-$color-font-heading: black;
 
-$color-font-grey: rgb(87, 87, 87);
-
-$color-theme-dark: rgb(53, 53, 53);
-$color-theme-light: white;
+$color-font: (
+  "base": white,
+  "heading": black,
+  "grey": #575757,
+);
 
 $color-strategy: #71aee7;
 $color-analysis: #e69e17;
 $color-implementation: #7fb72a;
 
 // fonts
-$fonts-heading-01: 4rem;
-$fonts-heading-02: 2rem;
-$fonts-heading-03: 1.4rem;
+$fonts-heading: (
+  "01": 4rem,
+  "02": 2rem,
+  "03": 1.4rem,
+);
 
 // width
-
 $width-full-view: 100vw;
-$width-full-percent: 100vw;
+$width-full-percent: 100%;
 $height-full: 100vh;
 
-$border-radius-big: 6rem;
-$border-radius-medium: 4rem;
-$border-radius-small: 2rem;
-$border-radius-tiny: 1rem;
+$border-radius: (
+  "big": 6rem,
+  "medium": 4rem,
+  "small": 2rem,
+  "tiny": 1rem,
+);
 
-$margin-vertical-big: 4rem;
-$margin-vertical-medium: 2rem;
-$margin-vertical-small: 1.2rem;
+$margin-vertical: (
+  "big": 4rem,
+  "medium": 2rem,
+  "small": 1.2rem,
+  "tiny": 0.8rem,
+);
 
-$padding-horizontal-big: 6rem;
-$padding-horizontal-medium: 4rem;
-$padding-horizontal-small: 2rem;
-$padding-horizontal-tiny: 1rem;
+$padding-horizontal: (
+  "big": 6rem,
+  "medium": 4rem,
+  "small": 2rem,
+  "tiny": 1rem,
+);

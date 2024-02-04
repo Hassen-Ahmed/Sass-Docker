@@ -1,8 +1,9 @@
+@use "sass:map";
 @use "../abstracts/variable" as var;
 
 .feature {
   padding: 2rem;
-  border-radius: var.$border-radius-small;
+  border-radius: map.get(var.$border-radius, "small");
   color: black;
   cursor: pointer;
 

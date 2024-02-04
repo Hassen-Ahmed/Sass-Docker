@@ -1,10 +1,11 @@
+@use "sass:map";
 @use "../abstracts/mixins" as mxn;
 @use "../abstracts/variable" as var;
 
 .footer {
-  margin-top: var.$margin-vertical-medium;
-  padding: var.$padding-horizontal-medium;
+  margin-top: map.get(var.$margin-vertical, "medium");
+  padding: map.get(var.$padding-horizontal, "medium");
   &__para {
-    font-size: var.$fonts-heading-03;
+    font-size: map.get(var.$fonts-heading, "03");
   }
 }
