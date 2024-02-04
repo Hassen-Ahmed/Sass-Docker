@@ -16,8 +16,40 @@
   justify-content: center;
   align-items: center;
 }
-// animation
 
-@mixin transitions($quantity: all, $sec: 0.2s) {
-  transition: $quantity $sec ease;
+// theme packs
+
+@mixin color-setter($color-bg, $color: null) {
+  background-color: $color-bg;
+  @if ($color != null) {
+    color: $color;
+  }
+}
+
+@mixin shared-statement($theme-name, $color-1, $color-2) {
+  @if ($theme-name == theme-dark) {
+    @include color-setter($color-1, $color-2);
+  } @else {
+    @include color-setter($color-2, $color-1);
+  }
+}
+
+@mixin themable($theme-name) {
+  .#{$theme-name} {
+    @include shared-statement($theme-name, #333, #fff);
+    transition: all 0.5s ease;
+
+    .theme__btn {
+      @include shared-statement($theme-name, silver, black);
+    }
+    .features {
+      @include shared-statement($theme-name, #fff, #333);
+    }
+    .contact {
+      @include shared-statement($theme-name, #fff, #333);
+    }
+    .footer {
+      @include shared-statement($theme-name, #fff, #333);
+    }
+  }
 }
