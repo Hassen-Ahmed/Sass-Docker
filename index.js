@@ -1,5 +1,6 @@
-const themeBtn = document.querySelector(".header__btn");
+const themeBtn = document.querySelector(".theme__btn");
+const themeBody = document.body;
 
 themeBtn.addEventListener("click", () => {
-  console.log("I am good. Thanks for asking!");
+  themeBody.classList.toggle("theme-dark");
 });
