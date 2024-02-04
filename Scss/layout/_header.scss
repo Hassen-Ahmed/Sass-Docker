@@ -7,23 +7,19 @@
   padding: 2rem 4rem;
   position: relative;
 
-  &__btn {
+  .theme__btn {
     position: absolute;
     top: 0;
     right: 4rem;
     width: 8rem;
-    color: var.$color-theme-light;
-    background-color: var.$color-theme-dark;
     border: 0.1rem solid var.$color-font-grey;
     border-radius: var.$border-radius-small;
     padding: calc(var.$padding-horizontal-tiny/2) var.$padding-horizontal-tiny;
-    @include mxn.transitions(all, 0.2s);
+    transition: all 0.2s ease;
     cursor: pointer;
 
     &:active {
       transform: translateY(0.3rem);
-      @include mxn.transitions(all, 0.2s);
-      @include mxn.transitions(all, 0.2s);
     }
   }
 

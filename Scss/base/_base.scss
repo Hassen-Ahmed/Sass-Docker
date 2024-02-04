@@ -20,3 +20,6 @@ body {
   height: var.$height-full;
   font-family: "Courier New", Courier, monospace;
 }
+
+@include mxn.themable(theme-light);
+@include mxn.themable(theme-dark);
