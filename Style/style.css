@@ -21,50 +21,6 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.theme-light {
-  background-color: #fff;
-  color: #333;
-  transition: all 0.5s ease;
-}
-.theme-light .theme__btn {
-  background-color: black;
-  color: silver;
-}
-.theme-light .features {
-  background-color: #333;
-  color: #fff;
-}
-.theme-light .contact {
-  background-color: #333;
-  color: #fff;
-}
-.theme-light .footer {
-  background-color: #333;
-  color: #fff;
-}
-
-.theme-dark {
-  background-color: #333;
-  color: #fff;
-  transition: all 0.5s ease;
-}
-.theme-dark .theme__btn {
-  background-color: silver;
-  color: black;
-}
-.theme-dark .features {
-  background-color: #fff;
-  color: #333;
-}
-.theme-dark .contact {
-  background-color: #fff;
-  color: #333;
-}
-.theme-dark .footer {
-  background-color: #fff;
-  color: #333;
-}
-
 .feature {
   padding: 2rem;
   border-radius: 2rem;
@@ -146,6 +102,50 @@ body {
 }
 .footer__para {
   font-size: 1.4rem;
+}
+
+.theme-light {
+  background-color: #fff;
+  color: #333;
+  transition: all 0.5s ease;
+}
+.theme-light .theme__btn {
+  background-color: black;
+  color: silver;
+}
+.theme-light .features {
+  background-color: #333;
+  color: #fff;
+}
+.theme-light .contact {
+  background-color: #333;
+  color: #fff;
+}
+.theme-light .footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-dark {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.theme-dark .theme__btn {
+  background-color: silver;
+  color: black;
+}
+.theme-dark .features {
+  background-color: #fff;
+  color: #333;
+}
+.theme-dark .contact {
+  background-color: #fff;
+  color: #333;
+}
+.theme-dark .footer {
+  background-color: #fff;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */
