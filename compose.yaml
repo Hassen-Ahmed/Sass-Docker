@@ -17,6 +17,7 @@ services:
 
     # use below to use already build image and create new container
     # image: sass-image:latest
+    # restart: always
     environment:
       NODE_ENV: production
     ports:
