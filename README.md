@@ -1,5 +1,13 @@
 ## 🎯️ Sass and Docker
 
+- Before you doing anything please clone this repo by throwing below command to your's terminal, Download zip file, or you could fork it and use as you like.
+
+- And also if you don't want to do these all just press the Green code button above and press Codespaces to create codespece on main branch.
+
+```
+git clone https://github.com/Hassen-Ahmed/Sass-Docker.git
+```
+
 - Run this command from you terminal to generalte node_module dir:
 
   ```
